@@ -11,7 +11,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/your-repo/flight-automation-framework.git'
+                git 'https://github.com/sachind0143/cap.git'
             }
         }
 
