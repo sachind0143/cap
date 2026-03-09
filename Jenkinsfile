@@ -11,7 +11,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/username/flight-automation-framework.git'
+                git 'https://github.com/your-repo/flight-automation-framework.git'
             }
         }
 
@@ -30,12 +30,12 @@ pipeline {
         stage('Publish Report') {
             steps {
                 publishHTML(target: [
-                    allowMissing: false,
-                    alwaysLinkToLastBuild: true,
-                    keepAll: true,
                     reportDir: 'test-output',
                     reportFiles: 'ExtentReport.html',
-                    reportName: 'Automation Report'
+                    reportName: 'Automation Report',
+                    keepAll: true,
+                    alwaysLinkToLastBuild: true,
+                    allowMissing: false
                 ])
             }
         }
