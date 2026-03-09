@@ -1,0 +1,91 @@
+2026-03-09 15:08:38 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\sachin\eclipse-workspace\CapstoneProject\testng.xml
+
+2026-03-09 15:08:40 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-09 15:08:41 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\sachin\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-09 15:08:49 INFO  com.flight.automation.utils.LoggerUtils - Selecting departure city: Boston
+2026-03-09 15:08:50 INFO  com.flight.automation.utils.LoggerUtils - Selecting destination city: London
+2026-03-09 15:08:51 INFO  com.flight.automation.utils.LoggerUtils - Clicking element: [[ChromeDriver: chrome on windows (25bf6d81857f33c27e5ebb4671480681)] -> css selector: input[type='submit']]
+2026-03-09 15:08:52 INFO  com.flight.automation.utils.LoggerUtils - Clicking element: [[ChromeDriver: chrome on windows (25bf6d81857f33c27e5ebb4671480681)] -> xpath: (//input[@type='submit'])[1]]
+2026-03-09 15:08:53 INFO  com.flight.automation.utils.LoggerUtils - Typing text: Sachin
+2026-03-09 15:08:54 INFO  com.flight.automation.utils.LoggerUtils - Typing text: Street1
+2026-03-09 15:08:54 INFO  com.flight.automation.utils.LoggerUtils - Typing text: Delhi
+2026-03-09 15:08:55 INFO  com.flight.automation.utils.LoggerUtils - Typing text: Delhi
+2026-03-09 15:08:55 INFO  com.flight.automation.utils.LoggerUtils - Typing text: 110001
+2026-03-09 15:08:56 INFO  com.flight.automation.utils.LoggerUtils - Typing text: 1234567890123456
+2026-03-09 15:08:56 INFO  com.flight.automation.utils.LoggerUtils - Clicking element: [[ChromeDriver: chrome on windows (25bf6d81857f33c27e5ebb4671480681)] -> css selector: input[type='submit']]
+2026-03-09 15:08:57 INFO  com.flight.automation.utils.LoggerUtils - Fetching booking confirmation message
+2026-03-09 15:08:58 INFO  com.flight.automation.utils.LoggerUtils - Getting text from element
+2026-03-09 15:08:59 INFO  io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 145.0.7632.117 (resolved driver for Chrome 145)
+2026-03-09 15:08:59 INFO  io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\sachin\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe
+2026-03-09 15:09:03 INFO  com.flight.automation.utils.LoggerUtils - Selecting departure city: Paris
+2026-03-09 15:09:04 INFO  com.flight.automation.utils.LoggerUtils - Selecting destination city: Rome
+2026-03-09 15:09:05 INFO  com.flight.automation.utils.LoggerUtils - Clicking element: [[ChromeDriver: chrome on windows (2eb292a9b2351d8abafb3f16ed371cd2)] -> css selector: input[type='submit']]
+2026-03-09 15:09:06 INFO  com.flight.automation.utils.LoggerUtils - Clicking element: [[ChromeDriver: chrome on windows (2eb292a9b2351d8abafb3f16ed371cd2)] -> xpath: (//input[@type='submit'])[1]]
+2026-03-09 15:09:07 INFO  com.flight.automation.utils.LoggerUtils - Typing text: Amit
+2026-03-09 15:09:08 INFO  com.flight.automation.utils.LoggerUtils - Typing text: Street2
+2026-03-09 15:09:08 INFO  com.flight.automation.utils.LoggerUtils - Typing text: Mumbai
+2026-03-09 15:09:09 INFO  com.flight.automation.utils.LoggerUtils - Typing text: Maharashtra
+2026-03-09 15:09:09 INFO  com.flight.automation.utils.LoggerUtils - Typing text: 400001
+2026-03-09 15:09:10 INFO  com.flight.automation.utils.LoggerUtils - Typing text: 9876543210123456
+2026-03-09 15:09:10 INFO  com.flight.automation.utils.LoggerUtils - Clicking element: [[ChromeDriver: chrome on windows (2eb292a9b2351d8abafb3f16ed371cd2)] -> css selector: input[type='submit']]
+2026-03-09 15:09:11 INFO  com.flight.automation.utils.LoggerUtils - Fetching booking confirmation message
+2026-03-09 15:09:11 INFO  com.flight.automation.utils.LoggerUtils - Getting text from element
+2026-03-09 15:46:52 INFO  [TestNG] Running:
+  C:\Users\sachin\eclipse-workspace\CapstoneProject\testng.xml
+
+2026-03-09 15:47:13 INFO  Selecting departure city: Boston
+2026-03-09 15:47:15 INFO  Selecting destination city: London
+2026-03-09 15:47:16 INFO  Clicking button
+2026-03-09 15:47:17 INFO  Clicking button
+2026-03-09 15:47:19 INFO  Typing text: Sachin
+2026-03-09 15:47:20 INFO  Typing text: Street1
+2026-03-09 15:47:21 INFO  Typing text: Delhi
+2026-03-09 15:47:22 INFO  Typing text: Delhi
+2026-03-09 15:47:24 INFO  Typing text: 110001
+2026-03-09 15:47:25 INFO  Typing text: 1234567890123456
+2026-03-09 15:47:26 INFO  Clicking button
+2026-03-09 15:47:27 INFO  Fetching booking confirmation message
+2026-03-09 15:47:27 INFO  Getting text from element
+2026-03-09 15:47:53 INFO  Selecting departure city: Paris
+2026-03-09 15:47:54 INFO  Selecting destination city: Rome
+2026-03-09 15:47:55 INFO  Clicking button
+2026-03-09 15:47:56 INFO  Clicking button
+2026-03-09 15:47:57 INFO  Typing text: Amit
+2026-03-09 15:47:57 INFO  Typing text: Street2
+2026-03-09 15:47:58 INFO  Typing text: Mumbai
+2026-03-09 15:47:59 INFO  Typing text: Maharashtra
+2026-03-09 15:47:59 INFO  Typing text: 400001
+2026-03-09 15:48:00 INFO  Typing text: 9876543210123456
+2026-03-09 15:48:02 INFO  Clicking button
+2026-03-09 15:48:04 INFO  Fetching booking confirmation message
+2026-03-09 15:48:04 INFO  Getting text from element
+2026-03-09 17:04:24 INFO  [TestNG] Running:
+  C:\Users\sachin\eclipse-workspace\CapstoneProject\testng.xml
+
+2026-03-09 17:04:38 INFO  Selecting departure city: Boston
+2026-03-09 17:04:39 INFO  Selecting destination city: London
+2026-03-09 17:04:40 INFO  Clicking button
+2026-03-09 17:04:41 INFO  Clicking button
+2026-03-09 17:04:42 INFO  Typing text: Sachin
+2026-03-09 17:04:43 INFO  Typing text: Street1
+2026-03-09 17:04:43 INFO  Typing text: Delhi
+2026-03-09 17:04:44 INFO  Typing text: Delhi
+2026-03-09 17:04:44 INFO  Typing text: 110001
+2026-03-09 17:04:45 INFO  Typing text: 1234567890123456
+2026-03-09 17:04:45 INFO  Clicking button
+2026-03-09 17:04:46 INFO  Fetching booking confirmation message
+2026-03-09 17:04:46 INFO  Getting text from element
+2026-03-09 17:04:56 INFO  Selecting departure city: Paris
+2026-03-09 17:04:58 INFO  Selecting destination city: Rome
+2026-03-09 17:05:00 INFO  Clicking button
+2026-03-09 17:05:02 INFO  Clicking button
+2026-03-09 17:05:03 INFO  Typing text: Amit
+2026-03-09 17:05:03 INFO  Typing text: Street2
+2026-03-09 17:05:04 INFO  Typing text: Mumbai
+2026-03-09 17:05:04 INFO  Typing text: Maharashtra
+2026-03-09 17:05:05 INFO  Typing text: 400001
+2026-03-09 17:05:05 INFO  Typing text: 9876543210123456
+2026-03-09 17:05:06 INFO  Clicking button
+2026-03-09 17:05:07 INFO  Fetching booking confirmation message
+2026-03-09 17:05:07 INFO  Getting text from element
