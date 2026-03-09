@@ -15,7 +15,7 @@ pipeline {
             }
         }
 
-        stage('Build Project') {
+        stage('Build') {
             steps {
                 bat 'mvn clean install'
             }
@@ -29,7 +29,10 @@ pipeline {
 
         stage('Publish Report') {
             steps {
-                publishHTML([
+                publishHTML(target: [
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: true,
+                    keepAll: true,
                     reportDir: 'test-output',
                     reportFiles: 'ExtentReport.html',
                     reportName: 'Automation Report'
