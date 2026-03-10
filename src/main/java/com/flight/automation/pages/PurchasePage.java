@@ -22,10 +22,19 @@ public class PurchasePage extends BasePage {
 
     @FindBy(id = "creditCardNumber")
     WebElement card;
+    
+    @FindBy(id ="creditCardMonth")
+    WebElement ccMonth;
+    
+    @FindBy(id="creditCardYear")
+    WebElement ccYear;
+    
+    @FindBy(id = "nameOnCard")
+    WebElement nameOnCard;
 
     @FindBy(css = "input[type='submit']")
     WebElement purchase;
-
+    
     public void enterPassengerDetails(String n,
                                       String a,
                                       String c,
@@ -39,11 +48,14 @@ public class PurchasePage extends BasePage {
         type(zip,z);
     }
 
-    public void enterPaymentDetails(String cardNumber) {
+    public void enterPaymentDetails(String cardNumber,String nameOnC,String cMonth,String cYear) {
 
         type(card,cardNumber);
+        type(ccMonth,cMonth);
+        type(ccYear,cYear);
+        type(nameOnCard,nameOnC);
     }
-
+    
     public void clickPurchaseFlight() {
 
         click(purchase);

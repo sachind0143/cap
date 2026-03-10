@@ -21,14 +21,14 @@ public class FlightBookingTest extends BaseTest {
         return new Object[][]{
 
                 {"Boston","London",
-                        "Sachin","Street1",
-                        "Delhi","Delhi","110001",
-                        "1234567890123456"},
+                        "Sachin","Gautam Nagar",
+                        "Bhopal","Madhya Pradesh","462023",
+                        "1234567890123456","10","2028","Sachin Dhuriya"},
 
                 {"Paris","Rome",
-                        "Amit","Street2",
-                        "Mumbai","Maharashtra","400001",
-                        "9876543210123456"}
+                        "Amit","Indrapuri Sector-C",
+                        "Bhopal","Madhya Pradesh","462021",
+                        "9876543210123456","09","2029","Amit Kumar"}
 
         };
     }
@@ -43,7 +43,11 @@ public class FlightBookingTest extends BaseTest {
                                String city,
                                String state,
                                String zip,
-                               String card) {
+                               String card,
+                               String ccMonth,
+                               String ccYear,
+                               String nameOnCard
+                               ) {
 
         TravelTheWorldPage home = new TravelTheWorldPage();
 
@@ -60,7 +64,7 @@ public class FlightBookingTest extends BaseTest {
         PurchasePage purchase = new PurchasePage();
 
         purchase.enterPassengerDetails(name,address,city,state,zip);
-        purchase.enterPaymentDetails(card);
+        purchase.enterPaymentDetails(card,nameOnCard,ccMonth,ccYear);
         purchase.clickPurchaseFlight();
 
         ConfirmationPage confirmation = new ConfirmationPage();
