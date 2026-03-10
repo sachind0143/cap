@@ -9,11 +9,11 @@ pipeline {
 
     stages {
 
-        stage('Checkout Code') {
-            steps {
-                git 'https://github.com/sachind0143/cap.git'
-            }
-        }
+	stage('Checkout Code') {
+    		steps {
+        		git branch: 'main', url: 'https://github.com/sachind0143/cap.git'
+    		}
+	}
 
         stage('Build') {
             steps {
