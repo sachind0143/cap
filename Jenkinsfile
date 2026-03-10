@@ -11,7 +11,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/sachind0143/cap.git'
+                git branch: 'main', url: 'https://github.com/sachind0143/CapstoneProject.git'
             }
         }
 
