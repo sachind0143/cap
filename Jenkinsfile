@@ -9,11 +9,11 @@ pipeline {
 
     stages {
 
-	stage('Checkout Code') {
-    		steps {
-        		git branch: 'main', url: 'https://github.com/sachind0143/cap.git'
-    		}
-	}
+        stage('Checkout Code') {
+            steps {
+                git branch: 'main', url: 'https://github.com/sachind0143/cap.git'
+            }
+        }
 
         stage('Build') {
             steps {
@@ -26,18 +26,21 @@ pipeline {
                 bat 'mvn test'
             }
         }
+    }
 
-        stage('Publish Report') {
-            steps {
-                publishHTML(target: [
-                    reportDir: 'test-output',
-                    reportFiles: 'ExtentReport.html',
-                    reportName: 'Automation Report',
-                    keepAll: true,
-                    alwaysLinkToLastBuild: true,
-                    allowMissing: false
-                ])
-            }
+    post {
+        always {
+
+            junit 'target/surefire-reports/*.xml'
+
+            publishHTML(target: [
+                reportDir: 'test-output',
+                reportFiles: 'ExtentReport.html',
+                reportName: 'Automation Report',
+                keepAll: true,
+                alwaysLinkToLastBuild: true,
+                allowMissing: true
+            ])
         }
     }
 }
