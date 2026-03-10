@@ -16,8 +16,10 @@ public class ScreenshotUtils {
 
         File source = ts.getScreenshotAs(OutputType.FILE);
 
-        String path =  "test-output/screenshots/" + testName + "_" + System.currentTimeMillis() + ".png";
+        String fileName = testName + "_" + System.currentTimeMillis() + ".png";
 
+        String path = "test-output/screenshots/" + fileName;
+        
         try {
 
             Files.createDirectories(Paths.get("test-output/screenshots"));
