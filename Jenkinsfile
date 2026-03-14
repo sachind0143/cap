@@ -41,6 +41,7 @@ pipeline {
                 alwaysLinkToLastBuild: true,
                 allowMissing: true
             ])
+            archiveArtifacts artifacts:'test-output/**',fingerprint:true
         }
     }
 }

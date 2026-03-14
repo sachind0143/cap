@@ -3,6 +3,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -15,8 +16,9 @@ public class ScreenshotUtils {
         TakesScreenshot ts = (TakesScreenshot) driver;
 
         File source = ts.getScreenshotAs(OutputType.FILE);
-
-        String path =  System.getProperty("user.dir")+"/test-output/screenshots/" + testName + "_" + System.currentTimeMillis() + ".png";
+        String relativePath = "screenshots/"+testName+"_"+System.currentTimeMillis()+".png";
+        
+        String fullPath =  System.getProperty("user.dir")+"/test-output/"+relativePath;
 
         try {
         	File folder = new File(System.getProperty("user.dir")+"/test-output/screenshots");
@@ -24,12 +26,12 @@ public class ScreenshotUtils {
         		folder.mkdirs();
         	}
             
-            Files.copy(source.toPath(), Paths.get(path));
+            Files.copy(source.toPath(), Paths.get(fullPath),StandardCopyOption.REPLACE_EXISTING);
 
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        return path;
+        return relativePath;
     }
 }
