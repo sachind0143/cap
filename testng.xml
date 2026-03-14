@@ -2,13 +2,13 @@
 
 <suite name="FlightBookingSuite" parallel="tests" thread-count="2">
     <listeners>
-        <listener class-name="com.flight.automation.listeners.TestListener"/>
+        <listener class-name="com.flightbooking.automation.listeners.TestListener"/>
     </listeners>
 
     <test name="FlightBookingTest">
 
         <classes>
-            <class name="com.flight.automation.tests.FlightBookingTest"/>
+            <class name="com.flightbooking.automation.tests.FlightBookingTest"/>
         </classes>
 
     </test>
